@@ -14,3 +14,7 @@ for (int i=0; i<array.Length; i++)
     }
     
 }
+
+array2 = array2.Where(x => !string.IsNullOrEmpty(x)).ToArray();
+
+Console.WriteLine("[{0}]", string.Join(", ", array2));
